@@ -29,8 +29,7 @@ public class FilterServiceImpl implements FilterService {
     }
 
     @Override
-    public List<Transaction> filtrarPorRangoMonto(List<Transaction> transacciones,
-                                                   double montoMin, double montoMax) {
+    public List<Transaction> filtrarPorRangoMonto(List<Transaction> transacciones, double montoMin, double montoMax) {
         return filtrar(transacciones, List.of(
                 t -> t.getMonto() >= montoMin,
                 t -> t.getMonto() <= montoMax
@@ -38,8 +37,7 @@ public class FilterServiceImpl implements FilterService {
     }
 
     @Override
-    public List<Transaction> filtrarPorFecha(List<Transaction> transacciones, 
-                                              LocalDate desde, LocalDate hasta) {
+    public List<Transaction> filtrarPorFecha(List<Transaction> transacciones, LocalDate desde, LocalDate hasta) {
         return filtrar(transacciones, List.of(
                 t -> !t.getFecha().isBefore(desde),
                 t -> !t.getFecha().isAfter(hasta)
