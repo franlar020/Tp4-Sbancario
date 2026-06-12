@@ -28,8 +28,8 @@ public class PerformanceReport {
     private final FilterService filterService;
 
     public PerformanceReport(SearchService searchService,
-                             SortService sortService,
-                             FilterService filterService) {
+                            SortService sortService,
+                            FilterService filterService) {
         this.searchService = searchService;
         this.sortService = sortService;
         this.filterService = filterService;
@@ -37,7 +37,8 @@ public class PerformanceReport {
 
     
     //Genera y ejecuta el reporte completo de performance para todos los tamaños definidos.
-     
+    
+
     public void generarReporteCompleto() {
         long[] tiemposLineal  = new long[TAMANOS.length];
         long[] tiemposBinario = new long[TAMANOS.length];
