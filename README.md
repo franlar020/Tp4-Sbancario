@@ -1,4 +1,4 @@
-# TP5 — Sistema de Análisis de Transacciones Bancarias
+# TP4 — Sistema de Análisis de Transacciones Bancarias
 
 Trabajo Práctico N°4 — Programación III  
 Universidad Nacional de La Rioja (UNLaR)
